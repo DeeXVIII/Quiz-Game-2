@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Home Screen -->
+    <div class="home-screen" onclick="showQuiz()">
+        <div class="quiz-text">QUIZ</div>
+        <div class="time-text">TIME</div>
+        <div class="click-text">Press to Start!</div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="quiz-container hidden" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question">Question text</h2>
+            <ul>
+                <li>
+                    <input type="radio" id="a" name="answer" class="answer" value="a">
+                    <label id="a_text" for="a">Choice 1</label>
+                </li>
+                <li>
+                    <input type="radio" id="b" name="answer" class="answer" value="b">
+                    <label id="b_text" for="b">Choice 2</label>
+                </li>
+                <li>
+                    <input type="radio" id="c" name="answer" class="answer" value="c">
+                    <label id="c_text" for="c">Choice 3</label>
+                </li>
+                <li>
+                    <input type="radio" id="d" name="answer" class="answer" value="d">
+                    <label id="d_text" for="d">Choice 4</label>
+                </li>
+            </ul>
+            <button id="submit" onclick="nextQuestion()">Submit</button>
+        </div>        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
